@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/black"
+    android:backgroundTint="@android:color/black"
+    android:backgroundTintMode="src_over">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/right_arrow"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        android:tint="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textPlaylistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playlist Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnPlayPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#19D95B"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playlistSongsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout> 
